@@ -1,1 +1,108 @@
-/* You can add global styles to this file, and also import other style files */
+// .pragrapg {
+//     font-family: "Source Sans 3", sans-serif;
+//     font-optical-sizing: auto;
+//     font-weight: 400;
+//     font-style: normal;
+// }
+// .heading {
+//     font-family: "Crimson Pro", serif;
+//     font-optical-sizing: auto;
+//     font-weight: 500;
+// }
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 1000
+// :root {
+$primaryColor: #4880FF;
+$secondryColor: #202224;
+$darkBlue: #273142;
+$primaryLightColor: #4880FF;
+$blueColor: #3749A6;
+$lightBlue: #4C61CC;
+$whiteColor: #FFFFFF;
+$PrimaryFont: "Nunito Sans",
+sans-serif;
+$secondryFont: "Nunito Sans",
+sans-serif;
+$borderRadiusTen: 10px;
+// opacity-color
+// }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+h4 {
+    // font-family: $PrimaryFont;
+    font-size: 32px;
+    line-height: 45px;
+    letter-spacing: -0.11px;
+    color: $secondryColor;
+}
+
+label,
+p,
+span {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.06px;
+    font-family: $secondryFont;
+    color: $secondryColor;
+}
+
+.box-card {
+    border-radius: 0.3px solid #B9B9B9;
+    background-color: $whiteColor;
+    border-radius: $borderRadiusTen;
+}
+
+input {
+    // border: 1px solid #D8D8D8;
+    // background-color: #D8D8D8;
+    // color: #F1F4F9;
+    // border-radius: 10px;
+    // border-radius: $borderRadiusTen;
+    border: 1px solid #D8D8D8;
+    background-color: #F1F4F9;
+    border-radius: 10px;
+    border-radius: 10px;
+    height: 55px;
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+    color: #A6A6A6;
+    &::placeholder {
+        color: #A6A6A6;
+    }
+}
+
+.input-group {
+    label {
+        font-size: 18px;
+        margin-bottom: 15px;
+        display: inline-block;
+        line-height: 24px;
+    }
+}
+
+button {
+    background-color: $primaryColor;
+    opacity: 0.9;
+    color: $whiteColor;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.07px;
+    text-align: center;
+    font-family: $secondryFont;
+}
+
+.object-center {
+    position: relative;
+    left: 50%;
+    top: 51%;
+    transform: translate(-50%, -50%);
+}
