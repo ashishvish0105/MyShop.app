@@ -106,3 +106,33 @@ button {
     top: 51%;
     transform: translate(-50%, -50%);
 }
+
+.btn {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.7px;
+    text-align: center;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    max-width: 70%;
+    width: 100%;
+}
+
+.btn.primary {
+    background-color: #4880FF;
+    color: white;
+}
+
+// create function for boostrap
+.mt-4 {
+    margin-top: 40px;
+}
+
+.mt-5 {
+    margin-top: 60px;
+}
+
+.containt-center {
+    text-align: center;
+}
